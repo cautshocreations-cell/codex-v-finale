@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "name": "codex-rp",
+  "builds": [
+    {
+      "src": "src/client/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/src/client/$1"
+    },
+    {
+      "src": "/",
+      "dest": "/src/client/index.html"
+    }
+  ],
+  "functions": {
+    "src/server/app.js": {
+      "runtime": "nodejs18.x"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "name": "codex-rp-server",
+  "version": "2.0.0",
+  "description": "A comprehensive role-playing server with advanced regulation management, player administration, and event system.",
+  "main": "src/server/app.js",
+  "scripts": {
+    "start": "node src/server/app.js",
+    "dev": "nodemon src/server/app.js",
+    "test": "node test-server.js",
+    "client": "live-server src/client --port=8080",
+    "migrate": "node scripts/migrate.js",
+    "migrate:reset": "node scripts/migrate.js --reset --backup",
+    "migrate:schema": "node scripts/migrate.js --no-seed",
+    "db:backup": "node scripts/migrate.js --backup --no-seed",
+    "db:stats": "node -e \"require('./src/server/db/database').getStats().then(stats => console.log(JSON.stringify(stats, null, 2)))\"",
+    "db:health": "node -e \"require('./src/server/db/database').healthCheck().then(health => console.log(JSON.stringify(health, null, 2)))\"",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "build": "npm run lint",
+    "postinstall": "echo 'Codex RP Server ready! Set DATABASE_URL and run npm start'",
+    "deploy": "npm run build && npm start",
+    "railway": "npm start",
+    "vercel-build": "echo 'Frontend ready for Vercel'"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "pg": "^8.11.3",
+    "bcrypt": "^5.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.3.1",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "multer": "^1.4.5-lts.1",
+    "winston": "^3.11.0",
+    "cron": "^3.1.6",
+    "uuid": "^9.0.1",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "eslint": "^8.55.0",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "roleplay",
+    "gaming",
+    "server",
+    "regulation",
+    "admin",
+    "postgresql",
+    "express"
+  ],
+  "author": "Codex RP Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codex-rp/server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codex-rp/server/issues"
+  },
+  "homepage": "https://codexrp.com"
+}

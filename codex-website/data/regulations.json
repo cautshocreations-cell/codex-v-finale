@@ -1,0 +1,75 @@
+{
+    "types": [
+        {
+            "id": 1,
+            "name": "Règles Générales",
+            "description": "Règles de base pour tous les joueurs du serveur",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        },
+        {
+            "id": 2,
+            "name": "Règles de Roleplay",
+            "description": "Règles spécifiques au jeu de rôle et aux interactions",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        },
+        {
+            "id": 3,
+            "name": "Règles Techniques",
+            "description": "Règles concernant l'utilisation des systèmes et outils",
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    ],
+    "regulations": [
+        {
+            "id": 1,
+            "title": "Respect des autres joueurs",
+            "description": "Tous les joueurs doivent respecter les autres joueurs, sans harcèlement ni comportement toxique.",
+            "type_id": 1,
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        },
+        {
+            "id": 2,
+            "title": "Règles de jeu de rôle",
+            "description": "Les joueurs doivent suivre les règles établies pour le jeu, y compris les règles de rôle et les scénarios.",
+            "type_id": 2,
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        },
+        {
+            "id": 3,
+            "title": "Interdiction de triche",
+            "description": "La triche est strictement interdite. Tout joueur surpris en train de tricher sera sanctionné.",
+            "type_id": 1,
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        },
+        {
+            "id": 4,
+            "title": "Utilisation des canaux de communication",
+            "description": "Les joueurs doivent utiliser les canaux de communication appropriés pour discuter des stratégies et des scénarios.",
+            "type_id": 3,
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        },
+        {
+            "id": 5,
+            "title": "Respect des personnages",
+            "description": "Chaque joueur doit respecter son personnage et celui des autres, en restant cohérent avec l'univers du jeu.",
+            "type_id": 2,
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        },
+        {
+            "id": 6,
+            "title": "Utilisation des mods autorisés",
+            "description": "Seuls les mods approuvés par l'administration sont autorisés sur le serveur.",
+            "type_id": 3,
+            "created_at": "2023-10-01T12:00:00Z",
+            "updated_at": "2023-10-01T12:00:00Z"
+        }
+    ]
+}

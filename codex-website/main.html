@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Règlement - Serveur Codex RP</title>
+    <meta name="description" content="Découvrez les règlements officiels du serveur Codex RP - Votre expérience de jeu de rôle ultime">
+    <link rel="stylesheet" href="src/client/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="src/client/images/codex-logo-main.jpg">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="src/client/images/codex-logo-main.jpg" alt="Codex RP Logo" class="logo">
+                <h1>Règlement du Serveur Codex RP</h1>
+            </div>
+            <button id="admin-btn" class="admin-button">Interface Admin</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Interface principale -->
+        <div id="main-interface">
+            <div class="regulation-container">
+                <div id="regulation-list" class="regulation-list">
+                    <!-- Les règlements seront chargés ici -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Interface d'administration -->
+        <div id="admin-interface" class="admin-interface hidden">
+            <div class="admin-header">
+                <h2>Administration des Règlements</h2>
+                <button id="back-btn" class="back-button">Retour aux Règlements</button>
+            </div>
+
+            <!-- Formulaire d'ajout/modification -->
+            <div class="regulation-form-container">
+                <div id="regulation-form" class="regulation-form">
+                    <!-- Le formulaire sera généré par JavaScript -->
+                </div>
+            </div>
+
+            <!-- Liste des règlements pour administration -->
+            <div class="admin-section">
+                <h3>Règlements Existants</h3>
+                <div id="admin-regulation-list" class="admin-regulation-list"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Serveur Codex RP. Tous droits réservés.</p>
+            <p>Pour toute question concernant ces règlements, contactez l'administration.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="src/client/js/regulations.js"></script>
+    <script src="src/client/js/admin.js"></script>
+    <script src="src/client/js/app.js"></script>
+</body>
+</html>
